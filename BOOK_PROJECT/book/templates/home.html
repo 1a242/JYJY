@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{%  block content%}
+<div class="container">
+    <h2>提交邮箱信息：</h2>
+    <form action="{% url 'signup' %}">
+        <div class="mb-3">
+            <label for="email" class="form-label">邮箱地址</label>
+            <input type="email" name="searchBook" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">注册</button>
+    </form>
+     {% load static %}
+    <img src="{% static 'images/logo.jpg' %}" alt="" width="1400" height="1000"
+                 class="d-inline-block align-text-top"/>
+    <h1>欢迎来到xxx网站</h1>
+    </div>
+  {% endblock content %}
+
